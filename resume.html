@@ -6,9 +6,28 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-
+    <link type="text/css" rel="stylesheet" href="css/timeline.css" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        .card .card-content {
+            padding-bottom: 0px;
+        }
+
+        h3 {
+            margin: 1rem 0 1rem 0;
+        }
+
+        .card .card-content .card-title {
+            margin-bottom: 0px;
+        }
+
+        blockquote {
+            padding-left: 1rem;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -16,7 +35,76 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
-
+    <div class="container">
+        <section id="timeline" class="timeline-outer">
+            <div class="row">
+                <div class="col s12">
+                    <ul class="timeline" style="padding-bottom:0">
+                        <li class="event" data-date="2017/至今">
+                            <div class="card" style="box-shadow:none">
+                                <div class="card-image">
+                                    <img src="images/character01.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">独立游戏制作人</span>
+                                    <blockquote>
+                                        <p><i class="tiny material-icons">chevron_right</i>独立撰写策划2D动作游戏方案</p>
+                                        <p><i class="tiny material-icons">chevron_right</i>利用美术外包资源制作伪3D人物骨骼动画模型</p>
+                                        <p><i class="tiny material-icons">chevron_right</i>在人物模型基础上制作多track并行的骨骼动画</p>
+                                        <p><i class="tiny material-icons">chevron_right</i>实现光照遮蔽效果的实时渲染</p>
+                                    </blockquote>
+                                </div>
+                                <!-- <div class="card-action">
+                                        <div class="chip">
+                                            Unity2D
+                                        </div>
+                                        <div class="chip">
+                                            Spine
+                                        </div>
+                                    </div> -->
+                            </div>
+                        </li>
+                        <li class="event" data-date="2016/2017">
+                            <div class="card" style="box-shadow:none">
+                                <div class="card-content">
+                                    <span class="card-title">北京贼鸥游戏</span>
+                                    <div class="section">
+                                        <h3>Unity2D游戏前端开发</h3>
+                                        <blockquote>
+                                            <p><i class="tiny material-icons">chevron_right</i>编写基于Unity引擎的Socket长连接模块</p>
+                                            <p><i class="tiny material-icons">chevron_right</i>编写本地游戏数据流读取模块</p>
+                                            <p><i class="tiny material-icons">chevron_right</i>编写其他功能模块</p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="section">
+                                        <h3>Python服务器开发</h3>
+                                        <blockquote>
+                                            <p><i class="tiny material-icons">chevron_right</i>该服务器系统分为三部分：游戏逻辑部分基于Twisted框架，使用长连接与客户端通信；Web服务器部分基于Tornado框架，用于后台分析处理玩家数据；数据库部分基于MySQL和Redis</p>
+                                            <p><i class="tiny material-icons">chevron_right</i>负责优化改进服务器系统</p>
+                                            <p><i class="tiny material-icons">chevron_right</i>负责配合游戏玩法开发新功能</p>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <!-- <div class="card-action">
+                                        <div class="chip">
+                                            Python
+                                        </div>
+                                        <div class="chip">
+                                            MySQL
+                                        </div>
+                                        <div class="chip">
+                                            Redis
+                                        </div>
+                                    </div> -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- 
     <div class="row">
         <div class="col s12 m4">
             <div class="card">
@@ -29,11 +117,11 @@
                 </div>
                 <div class="card-action">
                     <div class="chip">
-                        <!-- <img src="images/unity.png" style="max-width:32px; max-height:32px; width:auto; height:auto;">  -->
+                        <img src="images/unity.png" style="max-width:32px; max-height:32px; width:auto; height:auto;"> 
                         Unity2D
                     </div>
                     <div class="chip">
-                        <!-- <img src="images/spine.png" style="max-width:32px; max-height:32px; width:auto; height:auto;">  -->
+                        <img src="images/spine.png" style="max-width:32px; max-height:32px; width:auto; height:auto;"> 
                         Spine
                     </div>
                     <div class="chip">
@@ -45,7 +133,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 
 </html>
